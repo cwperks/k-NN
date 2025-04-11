@@ -1,3 +1,7 @@
+grant codeBase "${codebase.opensearch}" {
+  permission java.io.FilePermission "/proc/cpuinfo", "read";
+};
+
 grant codeBase "${codebase.opensearch-core}" {
   permission java.io.FilePermission "/proc/cpuinfo", "read";
 };
