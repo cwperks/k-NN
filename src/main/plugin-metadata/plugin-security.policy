@@ -1,3 +1,7 @@
+grant codeBase "${codebase.lucene-core}" {
+  permission java.io.FilePermission "/proc/cpuinfo", "read";
+};
+
 grant {
     permission java.lang.RuntimePermission "loadLibrary.opensearchknn_nmslib";
     permission java.lang.RuntimePermission "loadLibrary.opensearchknn_faiss";
